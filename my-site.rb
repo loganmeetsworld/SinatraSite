@@ -22,5 +22,9 @@ class MySite < Sinatra::Base
   get "/blog.html" do
   	erb :blog
   end
-  
+
+  get "/blog_post.html" do
+  	erb :blog_post
+  end
+
 end
