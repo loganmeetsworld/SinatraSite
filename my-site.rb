@@ -3,28 +3,39 @@ require "sinatra"
 class MySite < Sinatra::Base
 
   get "/" do
-  	erb :index
+  	@main_title = "Logan Meets World"
+    @hero = "hero"
+    @image = "me.jpg"
+    @title = "The Personal Website of Logan McDonald"
+    erb :index
   end
 
   get "/index.html" do
+    @main_title = "Logan Meets World"
+    @hero = "hero"
+    @image = "me.jpg"
+    @title = "The Personal Website of Logan McDonald"
   	erb :index
   end
 
-
   get "/about.html" do
-  	erb :about
+    @title = "About"
+    erb :about
   end
 
   get "/projects.html" do
-  	erb :projects
+  	@title = "Projects"
+    erb :projects
   end
 
   get "/blog.html" do
-  	erb :blog
+  	@title = "Blog"
+    erb :blog
   end
 
   get "/blog_post.html" do
-  	erb :blog_post
+  	@title = Time.now.month + ' ' + Time.now.year
+    erb :blog_post
   end
 
 end
