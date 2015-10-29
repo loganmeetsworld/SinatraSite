@@ -19,7 +19,7 @@ class MySite < Sinatra::Base
   end
 
   get "/about.html" do
-    @title = "About"
+    @title = "About Logan"
     erb :about
   end
 

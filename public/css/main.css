@@ -48,7 +48,7 @@ h3 {
   color: #fafafa;
   background-size: cover;
   height: 520px;
-  padding: 0;
+  padding: 0px;
 }
 
 #hero img {
@@ -113,7 +113,6 @@ td, th {
   text-align: center;
   margin-top: 10px;
 }
-
 
 footer {
   color: #624F62;
