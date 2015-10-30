@@ -29,12 +29,12 @@ class MySite < Sinatra::Base
   end
 
   get "/blog.html" do
-  	@title = "Blog"
+  	@title = "Blog Archive"
     erb :blog
   end
 
   get "/blog_post.html" do
-  	@title = Time.now.month + ' ' + Time.now.year
+  	@title = "Blog Post"
     erb :blog_post
   end
 

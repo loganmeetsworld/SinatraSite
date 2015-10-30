@@ -1,18 +1,25 @@
+<% 
+@month_names = [
+	"January", "February", "March", "April",
+	"May", "June", "July", "August", "September",
+	"October", "November", "December"
+]
+@day_names = [
+	"Sun", "Mon", "Tue", "Wed", "Thus", "Fri", "Sat"
+]
+%> 
+
+
+<% @month_names.each do |month_name| %>
 <table border="1" align="center">
   <thead>
     <tr>
-      <th colspan="7">
-        Blog Archive
-      </th>
+      <th colspan="7"><%= month_name %></th>
     </tr>
     <tr>
-      <th>Sun</th>
-      <th>Mon</th>
-      <th>Tue</th>
-      <th>Wed</th>
-      <th>Thu</th>
-      <th>Fri</th>
-      <th>Sat</th>
+    	<% @day_names.each do |day| %>
+      <th><%= day %></th>
+      <% end %> 
     </tr>
   </thead>
   <tr>
@@ -21,7 +28,7 @@
     <td></td>
     <td></td>
     <td>1</td>
-    <td><a href="http://loganmcdonald.me/2015/09/29/ada-week-1/">2</a></td>
+    <td>2</td>
     <td>3</td>
   </tr>
   <tr>
@@ -53,7 +60,11 @@
   </tr>
   <tr>
    	<td>25</td>
-    <td><a href="blog_post.html">26*</a></td>
+    <% if month_name == "January" %> 
+    		<td><a href="blog_post.html">26*</a></td>
+    	<% else %> 
+    		<td>26</td>
+    <% end %> 
     <td>27</td>
     <td>28</td>
     <td>29</td>
@@ -61,3 +72,4 @@
     <td>31</td>
   </tr>
 </table>
+<% end %>
