@@ -45,6 +45,10 @@ h3 {
   margin: 40px 0px 40px 0px;
 }
 
+h3.blog {
+  text-align: center;
+}
+
 #hero {
   text-align: center;
   color: #fafafa;

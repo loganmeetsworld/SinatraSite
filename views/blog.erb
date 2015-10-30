@@ -1,3 +1,5 @@
+<h3 class="blog">Latest blog: <a href="blog_post.erb">October 26, 2015</a> </h3>
+
 <%require 'date'
 
 def days_in_month(year, month)
@@ -21,7 +23,7 @@ year = Time.now.year
 	<table border="1" align="center">
 	  <thead>
 	    <tr>
-	      <th colspan="7"><%= month_name[0] %></th>
+	      <th colspan="7"><%= month_name[0] + ' ' + year.to_s%></th>
 	    </tr>
 	    <tr>
 	    	<% @day_names.each do |day| %>
