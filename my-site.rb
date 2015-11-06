@@ -38,4 +38,8 @@ class MySite < Sinatra::Base
     erb :blog_post
   end
 
+  get '/my-first-form' do
+  	erb :my_first_form
+	end
+
 end
