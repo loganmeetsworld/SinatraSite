@@ -1,0 +1,27 @@
+	<p>Here is a showcase of my ongoing and completed projects for <a href="https://adadevelopersacademy.org">Ada Developers Academy</a>. All of my projects can be found on my <a href="https//www.github.com/loganmeetsworld">Github page</a> as well.</p> 
+
+	<img src="tina_star.gif" width="auto" height="150px" />
+
+<h2>Ongoing Projects</h2>
+	<ol>
+		<li>Build a Raspberry Pi app in Python that lights up when I get emails</li>
+		<li>Learn JavaScript frameworks that allow me to build web applications</li>
+		<li>Build a story-telling wesbite that makes it easier for people to share short stories with the people they love</li>
+
+     <% @projects = ["Bring Back the Dinosaurs","Talking Ducks", "Really Nice Robots", "Hoverboards", "Flying Cars", "Aliens", "Bunnies that Talk", "Time Travel", "All Women Remake of Hamilton the Musical", "Self-driving Cars", "Cool Beans", "The Best Toothbrush Ever Invented", "Code that Writes Itself"]
+     	 @project = @projects.sample 
+     	 @num_words = @project.split(' ').length
+     %>
+		<li><%= @num_words %> <%= @num_words == 1 ? "word:" : "words:" %> <%= @project %></li>
+	</ol>
+<h2>Completed Projects</h2>
+	<ol>
+		<li><a href="https://gist.github.com/loganmeetsworld/d84e60e18d606272a6dc">Calculator app that takes user input</a></li>
+		<li><a href="https://gist.github.com/loganmeetsworld/83e04cd5f139f02c8baa">Random menu generator for restaurants</a></li>
+		<li><a href="https://github.com/loganmeetsworld/Solar-System/tree/lmm/master">The whole known Solar System (according to me)</a></li>
+		<li><a href="https://github.com/loganmeetsworld/BankAccounts/tree/lmm/master">Bank Accounts manager</a></li>
+		<li><a href="https://github.com/loganmeetsworld/Scrabble/tree/lmah/master">Scrabble game built with TDD</a></li>
+		<li><a href="https://github.com/loganmeetsworld/Word-Guess/tree/lmm/master">Word Guess game: Robot themed!</a></li>
+		<li><a href="https://gist.github.com/loganmeetsworld/3c6105d6f0599c77e959">Baby dragon app (with multiple dragon personalities!)</a></li>
+		<li><a href="https://github.com/loganmeetsworld/FarMar/tree/lmm/master">Farmer's Market lookup built with TDD</a></li>
+	</ol>
